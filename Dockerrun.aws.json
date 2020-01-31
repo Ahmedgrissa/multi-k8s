@@ -10,7 +10,7 @@
         {
             "name": "server",
             "image": "ahmedgrissa/multi-server",
-            "hostname": "  ",
+            "hostname": "api",
             "essential": false,
             "memory": 128
         },
