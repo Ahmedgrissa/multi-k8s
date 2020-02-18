@@ -20,10 +20,12 @@ const pgClient = new Pool({
 });
 pgClient.on('error', () => console.log('Lost PG connection'));
 
-
+// 12345asdf
 pgClient
   .query('CREATE TABLE IF NOT EXISTS values (number INT)')
   .catch(err => console.log(err));
+
+console.log('pgClient =========', pgClient);
 
 
 // Redis Client Setup
