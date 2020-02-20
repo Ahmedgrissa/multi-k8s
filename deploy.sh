@@ -1,6 +1,6 @@
-docker build -t ahmedgrissa/multi-client:latest -t ahmedgrissa/multi-client:$SHA ./client/Dockerfile ./client
-docker build -t ahmedgrissa/multi-server:latest -t ahmedgrissa/multi-server:$SHA ./server/Dockerfile ./server
-docker build -t ahmedgrissa/multi-worker:latest -t ahmedgrissa/multi-worker:$SHA ./worker/Dockerfile ./worker
+docker build -t ahmedgrissa/multi-client:latest -t ahmedgrissa/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t ahmedgrissa/multi-server:latest -t ahmedgrissa/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t ahmedgrissa/multi-worker:latest -t ahmedgrissa/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push ahmedgrissa/multi-client:latest
 docker push ahmedgrissa/multi-server:latest
